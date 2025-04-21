@@ -1,35 +1,41 @@
 :root{
-    --cor-primaria: #FFFF00
-    --cor-secundaria: #032B44 
+    --cor-primaria: #032b44;
+    --cor-secundaria: #c01e1e;
+    --cor-terciaria: #9e9c9c;
 }
 body{
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #032B44;
+    background-color: #032b44;
 }
 header{
-    background-color: #808080;
-    color: #FFFF00;
+    background-color: #c01e1e;
+    color: #ffffff25;
     padding: 1em;
     text-align: center;
-    font-family: Arial Black, sans-serif;
 }
 nav{
-    background-color: #FFFF00;
-    padding: 1.5em;
+    background-color: #9e9c9c;
+    padding: 1em;
     text-align: center;
 }
 nav ul{
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 nav li{
-    margin-bottom: 20px;
+    margin-right: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+nav li :hover {
+    transform: scale(1.1);
 }
 nav a{
-    color: #032B44;
+    color: #ffffff;
     text-decoration: none;
 }
 main{
@@ -39,39 +45,76 @@ main{
     margin: 0 auto;
     max-width: 90%;
 }
+section{
+    background-color: #032b44;
+    padding: 2em;
+    margin-bottom: 20px;
+    border: 1px solid #c01e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+    transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+section:hover{
+    animation: pulse 0.5s ease-in-out;
+}
 h1{
-    color: #FFFF00;
+    color: #c01e1e;
     font-size: 36px;
-    margin-bottom: 10px;
-    font-family: Arial Black, sans-serif;
+    margin-bottom: 20px;
     text-align: center;
 }
 h2, h3{
-    color: #FFFF00;
+    color: #9e9c9c;
     margin-bottom: 10px;
 }
 p{
     font-size: 18px;
     margin-bottom: 20px;
-    color: #FFFFFF;
+    color: #CCCCCC;
     text-align: justify;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-left: 20px;
 }
-#contatos{
-    text-align: justify;
-    color: #FFFFFF;
+#contatos strong{
+    border: none;
+    background: none;
+    font-weight: bold;
 }
 footer{
-    background-color: #808080;
-    color: #FFFF00;
+    background-color: #c01e1e;
+    color: #FFFFFF;
     padding: 1em;
     text-align: center;
-    
+    clear: both;
 }
 footer p{
     text-align: center;
     width: 100%;
+    margin-bottom: 0;
+}
+@media (max-width: 768px){
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin-bottom: 20px;
+        margin-right: 0;
+}
 }
