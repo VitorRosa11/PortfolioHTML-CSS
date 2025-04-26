@@ -186,7 +186,25 @@
     text-decoration: underline;
     word-break: break-word;
   }
-  
+  #contatos a:hover, #contatos a:active{
+  color: var(--cor-secundaria);
+
+  }
+  #contatos i.fa-envelope{
+    color: #0072c6;/* colorindo o email */
+  }
+  #contatos i.fa-whatsapp{
+    color: #25d366; /* colorindo o WhatssApp */
+  }
+#contatos i.fa-instagram{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 50%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Colorindo o ícone do instagram (com degradê e gradiente clássicos)*/
+}
+#contatos i.fa-github{
+  color: white; /* colorindo o ícone do GitHub */
+}
+
   @media (max-width: 480px) {
     #contatos li {
       font-size: 15px;
