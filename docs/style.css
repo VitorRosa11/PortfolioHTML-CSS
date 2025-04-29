@@ -8,7 +8,7 @@
 
 
 body {
-  font-family: 'Roboto', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+  font-family: Arial, Helvetica, sans-serif ;
   margin: 0;
   padding: 0;
   background-color: var(--cor-primaria);
@@ -199,7 +199,7 @@ h1 {
 
 
 h1, h2, h3, h4 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: var(--cor-terciaria);
   margin-bottom: 10px;
   text-align: center;
